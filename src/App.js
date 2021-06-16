@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import Vehicle from "./Vehicle";
+import Pagination from "./Pagination";
 import './App.css'
 
 
@@ -54,6 +55,12 @@ function App() {
           );
         })
       }
+
+      <Pagination
+        next={pages.next}
+      />
+      
+
 
     </div >
   );

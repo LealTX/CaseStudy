@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Pagination
+const Pagination = ({ next }) => {
 
-return (
-    <div className='page-container'>
-        <div className='page-row'>
-            
+    return (
+        <div className='page-container'>
+            <div className='page-row'>
+                <button onClick='nextPage'>Next{next}</button>
+            </div>
         </div>
-    </div>
-)
+    )
+
+};
+
+export default Pagination
